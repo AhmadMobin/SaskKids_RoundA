@@ -13,9 +13,6 @@ library(RCurl)
 library(foreign)
 
 
-runGitHub("SaskKids_RoundA", "AhmadMobin")
-# Run a tar or zip file directly
-runUrl("https://github.com/rstudio/SaskKids_RoundA/archive/master.zip")
 
 #LOADING DATA
 #Criteria 3 Data Set: Time= 10 hrs/day; Number of Valid Days= 3
