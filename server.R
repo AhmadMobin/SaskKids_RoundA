@@ -13,6 +13,7 @@ library(RCurl)
 library(foreign)
 
 
+setwd("https://github.com/AhmadMobin/SaskKids_RoundA.git")
 
 #LOADING DATA
 #Criteria 3 Data Set: Time= 10 hrs/day; Number of Valid Days= 3
