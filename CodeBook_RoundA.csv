@@ -1,0 +1,88 @@
+Variable,Description,Source,Notes
+id,Each observation has a record id associated with it,Activity Data- Section 3.1, 
+profile,the data collection round,Activity Data- Section 3.1,Round A Data Collection
+participant,unique numbers for each students,Activity Data- Section 3.1,Some students were incorrectly assigned participant id numbers
+date, ,Activity Data- Section 3.1, 
+Day,The day of the study period,Section 4.5, 
+SatSunCat,Weekend=1; Weekday=2,Section 4.6, 
+Week,The Week Number during the study period,Section 4.7, 
+Age,Ages 9-14,Pre-Study Survey Data- Section 3.2, 
+DOB,Date of birth,Pre-Study Survey Data- Section 3.2, 
+Grade,Grade 5-8,Pre-Study Survey Data- Section 3.2, 
+Gender,"0= Female, 1=Male",Pre-Study Survey Data- Section 3.2, 
+Newcomer,"0= No, 1=Yes",Pre-Study Survey Data- Section 3.2, 
+Heightcm,Height in cm,Pre-Study Survey Data- Section 3.2, 
+Weightkg,Weight in kg,Pre-Study Survey Data- Section 3.2, 
+School,The school the student attends,Pre-Study Survey Data- Section 3.2, 
+School_Cat,The numeric code assigned to a school,Pre-Study Survey Data- Section 3.2, 
+Neighbourhood,The Neighbourhood the student lives in,Pre-Study Survey Data- Section 3.2, 
+NGH,The numeric code assigned to a neighbourhood,Pre-Study Survey Data- Section 3.2, 
+Era,The Era classification of a neighbourhood: 1-4,Neighbourhood File- Section 3.3, 
+NALP_Nghd,The Neighbourhoods that have NALP scores assigned,NALP file from Dr. Fuller- Section 3.4, 
+NALP_AF,Activity Friendly,NALP file from Dr. Fuller- Section 3.4, 
+NALP_DD,Density of Destinations,NALP file from Dr. Fuller- Section 3.4, 
+NALP_SAFE,Safety,NALP file from Dr. Fuller- Section 3.4, 
+NALP_UA, ,NALP file from Dr. Fuller- Section 3.4, 
+Total_NALP,Sum of NALP_AF + NALP_DD+ NALP_SAFE,NALP file from Dr. Fuller- Section 3.4, 
+NALP_Cat,1/Low Walkability= 7.18749 to 10.68750; 2= 10.36751 to 11.29167; 3= 11.29168 to 12.54167; 4/High Walkability= 12.54168 to 14.02084, ,split based on quantiles
+Temp_C,Celsius,Environment Canada- Section 3.5, 
+Temp_Cat,"1 = Very Low= (-24,-14]; 2 = Low= (-14,-4]; 3 = Moderate=(-4,4]; 4 = Above Moderate=(4,14]; 5 = High=(14,24]; 6 = Very High=(24,30]", ,split every 10 degrees
+Rain_mm,Rain on the ground,Environment Canada- Section 3.5, 
+RainCat,0= No rain; 1=Rain, , 
+Snow_cm,snow on the ground,Environment Canada- Section 3.5, 
+SnowCat,0=No snow; 1=snow, , 
+Wind_km,maximum wind speed,Environment Canada- Section 3.5, 
+WindCat,0 = calm conditions (<19 km/h); 1 = windy conditions (>= 19 km/h), , 
+DayLight,time of illumination in hours,Environment Canada- Section 3.5, 
+DayLightCat,0=Less than 10 hours of daily illumination; 1=Greater or Equal of 10 hours of daily illumination, , 
+nowear_minutes,time the student did not wear the devices (min),Activity Data- Section 3.1, 
+WearTime,time student wore the device (min),Section 4.1, 
+FittedValues, ,Section 4.3.2,Dr.Fuller's standardized linear regression method
+StandardizedWearTime,Standardized Wear Time (min),Section 4.3.2,Dr.Fuller's standardized linear regression method
+sedentary_minutes,raw sedentary (min),Activity Data- Section 3.1, 
+CSEP_SED,0= student has more than 120 minutes of sitting (on this day); 1= student has less than or equal to 120 minutes of sitting (on this day),Section 4.4.1, 
+SED_STD,standardized SED (min),Section 4.3.1, 
+lpa_minutes,raw lpa minutes,Activity Data- Section 3.1, 
+CSEP_LPA,0= student has less than 240 minutes (4 hours) of lpa (on this day); 1= student has more than or equal to 240 minutes (4 hours) of lpa (on this day),Section 4.4.2, 
+LPA_STD,standardized LPA (min),Section 4.3.1, 
+mpa_minutes,raw mpa (min),Activity Data- Section 3.1, 
+vpa_minutes,raw vpa (min),Activity Data- Section 3.1, 
+MVPA,Sum of mpa_minutes + vpa_minutes,Section 4.2, 
+CSEP_MVPA,0= student has less the 60 minutes of MVPA (on this day); 1= student has greater than or equal to 60 minutes of MVPA (on this day),Section 4.4.3, 
+MVPA_STD,Standardized MVPA (min),Section 4.3.1, 
+Active,0= student has not achieved all recomended activity guidelines (on this day); 1= student has achieved all recomended activity guidelines (on this day),Section 4.4.4, 
+Wt_8h,if the student wore the device for at least 8 hours/480 minutes or more then will be coded as a ‘1’ otherwise ‘0’,Section 4.9.1, 
+Wt_8h_STD,coded the same as Wt_8h; using standardized wear time,Section 4.10.1, 
+D4H8,1= student has 4 valid days (including 1 on Sat/Sun) for 8 hrs per day,Section 4.9.1,The values in this column will be repeated unnecessarily
+D4H8_STD,using standradized wear time to determine the number of valid observations,Section 4.10.1,The values in this column will be repeated unnecessarily
+D3H8,1= student has 3 valid days (including 1 on Sat/Sun) for 8 hrs per day,Section 4.9.2,The values in this column will be repeated unnecessarily
+D3H8_STD,using standradized wear time to determine the number of valid observations,Section 4.10.2,The values in this column will be repeated unnecessarily
+Wt_10h,if the student wore the device for at least 10 hours/600 minutes or more then will be coded as a ‘1’ otherwise ‘0’,Section 4.9.3, 
+Wt_10h_STD,coded the same as Wt_10h; using standardized wear time,Section 4.10.3, 
+D4H10,1= student has 4 valid days (including 1 on Sat/Sun) for 10 hrs per day,Section 4.9.3,The values in this column will be repeated unnecessarily
+D4H10_STD,using standradized wear time to determine the number of valid observations,Section 4.10.3,The values in this column will be repeated unnecessarily
+D3H10,1= student has 3 valid days (including 1 on Sat/Sun) for 10 hrs per day,Section 4.9.4,The values in this column will be repeated unnecessarily
+D3H10_STD,using standradized wear time to determine the number of valid observations,Section 4.10.4,The values in this column will be repeated unnecessarily
+VDaySequence,This is needed to preform linear regression due to the repeated nature of our data. It provides a sequence count of every unique record for a student. It repeates the sequence for each student,Section 6.1,This was recommended by Dr. Fuller
+ValidDays,A participant's case specific sum of 'valid days',Section 8.1.1,Tarun- Equation A; The values in this column will be repeated unnecessarily
+Wt_con,case specific controlled wear-time,Section 8.1.1,Tarun- Equation A
+SUM_MVPA,a participant's accumulated total valid (unstandradized) MVPA,Section 8.1.2,Tarun- Equation B
+Wt_Uncon,a participant's accumulated uncontrolled wear-time (hrs),Section 8.1.2,Tarun- Equation B
+EQB_MVPA,Total Standardized MVPA,Section 8.1.2,Tarun- Equation B
+Mean_MVPA,Standardized Mean MVPA (min),Section 8.1.3,Tarun- Equation C
+SUM_SED,a participant's accumulated total valid (unstandradized) SED,Section 8.1.4,Tarun- Equation B
+EQB_SED,Total Standardized SED,Section 8.1.4,Tarun- Equation B
+Mean_SED,Standardized Mean SED (min),Section 8.1.5,Tarun- Equation C
+SUM_LPA,a participant's accumulated total valid (unstandradized) LPA,Section 8.1.4,Tarun- Equation B
+EQB_LPA,Total Standardized LPA,Section 8.1.4,Tarun- Equation B
+Mean_LPA,Standardized Mean LPA (min),Section 8.1.5,Tarun- Equation C
+Mean_Week_Temp,Mean Weekly Temperature- Celsius,Section 8.2.1, 
+T_TempCat,Tarun's Temperature Categories,Section 8.2.1, 
+Mean_Week_Rain,Mean Weekly Rain Fall (mm),Section 8.2.2, 
+T_RainCat,Tarun's Rain Categories,Section 8.2.2, 
+Mean_Week_Snow,Mean Weekly Snow Fall (cm),Section 8.2.3, 
+T_SnowCat,Tarun's Snow Categories,Section 8.2.3, 
+Mean_Week_Wind,Mean Weekly Wind Speed (km/hr),Section 8.2.4, 
+T_WindCat,Tarun Wind Speed Categories,Section 8.2.4, 
+Mean_Week_DayLight,Mean Weekly Day Light (hr),Section 8.2.5, 
+T_DaylightCat,Tarun Day Light Categories,Section 8.2.5, 
