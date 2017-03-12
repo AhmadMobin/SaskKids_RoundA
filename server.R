@@ -15,8 +15,8 @@ library(foreign)
 
 runGitHub("SaskKids_RoundA", "AhmadMobin")
 # Run a tar or zip file directly
-runUrl("https://github.com/rstudio/shiny_example/archive/master.tar.gz")
-runUrl("https://github.com/rstudio/shiny_example/archive/master.zip")
+runUrl("https://github.com/rstudio/SaskKids_RoundA/archive/master.tar.gz")
+runUrl("https://github.com/rstudio/SaskKids_RoundA/archive/master.zip")
 
 #LOADING DATA
 #Criteria 3 Data Set: Time= 10 hrs/day; Number of Valid Days= 3
