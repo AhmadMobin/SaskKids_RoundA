@@ -15,7 +15,6 @@ library(foreign)
 
 runGitHub("SaskKids_RoundA", "AhmadMobin")
 # Run a tar or zip file directly
-runUrl("https://github.com/rstudio/SaskKids_RoundA/archive/master.tar.gz")
 runUrl("https://github.com/rstudio/SaskKids_RoundA/archive/master.zip")
 
 #LOADING DATA
