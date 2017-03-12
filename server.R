@@ -12,8 +12,8 @@ library(rdrop2)
 library(RCurl)
 library(foreign)
 
-#Setting working directory
-setwd ("C:\\Users\\amobin\\Dropbox\\SmartCitiesHealthyKids\\RoundA_DashBoard") #CHANGE
+
+runGitHub("SaskKids_RoundA", "AhmadMobin")
 
 #LOADING DATA
 #Criteria 3 Data Set: Time= 10 hrs/day; Number of Valid Days= 3
