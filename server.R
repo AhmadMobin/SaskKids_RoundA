@@ -13,10 +13,9 @@ library(RCurl)
 library(foreign)
 
 
-
 #LOADING DATA
 #Criteria 3 Data Set: Time= 10 hrs/day; Number of Valid Days= 3
-Criteria3_data <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria3.csv?token=AXfVptolG4HRdhu1rJNjNlFSVegE_PwCks5YztlVwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Criteria3_data <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria3.csv?token=AXfVptolG4HRdhu1rJNjNlFSVegE_PwCks5YztlVwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 
 Criteria3_data<- Criteria3_data[,-1]
 
@@ -34,7 +33,7 @@ Criteria3_data$DayLightCat<-as.factor(Criteria3_data$DayLightCat)
 Criteria3_data$VDaySequence<-as.factor(Criteria3_data$VDaySequence)
 
 #Criteria 1 Data Set: Time= 8 hrs/day; Number of Valid Days= 4
-Criteria1_data <-read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria1.csv?token=AXfVpvyWTVmZ5JoqVHyP_pIi_uCbiB7Zks5YztnawA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Criteria1_data <-read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria1.csv?token=AXfVpvyWTVmZ5JoqVHyP_pIi_uCbiB7Zks5YztnawA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 Criteria1_data<- Criteria1_data[,-1]
 
 Criteria1_data$Age<-as.factor(Criteria1_data$Age)
@@ -52,7 +51,7 @@ Criteria1_data$VDaySequence<-as.factor(Criteria1_data$VDaySequence)
 
 
 #Criteria 2 Data Set: Time= 8 hrs/day; Number of Valid Days= 3
-Criteria2_data <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria2.csv?token=AXfVpsEKpF4D4ickr-oOFB6tBIPQA9F6ks5YztoLwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Criteria2_data <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria2.csv?token=AXfVpsEKpF4D4ickr-oOFB6tBIPQA9F6ks5YztoLwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 Criteria2_data<- Criteria2_data[,-1]
 
 Criteria2_data$Age<-as.factor(Criteria2_data$Age)
@@ -69,7 +68,7 @@ Criteria2_data$DayLightCat<-as.factor(Criteria2_data$DayLightCat)
 Criteria2_data$VDaySequence<-as.factor(Criteria2_data$VDaySequence)
 
 #Criteria 4 Data Set: Time= 10 hrs/day; Number of Valid Days= 3
-Criteria4_data <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria4.csv?token=AXfVpo9FZRJl17NRN-cuGQWG7HKuZykPks5YztpUwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Criteria4_data <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_MasterTable_Criteria4.csv?token=AXfVpo9FZRJl17NRN-cuGQWG7HKuZykPks5YztpUwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 Criteria4_data<- Criteria4_data[,-1]
 
 Criteria4_data$Age<-as.factor(Criteria4_data$Age)
@@ -87,7 +86,7 @@ Criteria4_data$VDaySequence<-as.factor(Criteria4_data$VDaySequence)
 
 
 #Original
-Original_data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/accel_activity_summary.csv?token=AXfVplBDGWlsz7ZDoXN9B9El-nHXP3fGks5Yztq9wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Original_data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/accel_activity_summary.csv?token=AXfVplBDGWlsz7ZDoXN9B9El-nHXP3fGks5Yztq9wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 #Student 4476616246 Disgard
 Original_data<-Original_data[!Original_data$participant=="4476616246",]
 #Student 2513035516 should be 2513503516
@@ -101,7 +100,7 @@ Original_data$date<- mdy(Original_data$date)
 
 
 #Pre-Experiment Survey Data
-Survey_Data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/SurveyData.csv?token=AXfVpqMfaNH7vJWxTyjKCvCxHzQN_nrtks5YztskwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Survey_Data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/SurveyData.csv?token=AXfVpqMfaNH7vJWxTyjKCvCxHzQN_nrtks5YztskwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 #Re-coding NewComer Column: 1=Yes, 2=No
 Survey_Data$Newcomer<-as.character(Survey_Data$Newcomer)
 Survey_Data$Newcomer [Survey_Data$Newcomer=="No"] <- "0"
@@ -116,7 +115,7 @@ Survey_Data<-Survey_Data[!duplicated(Survey_Data$ParticipantCode),]
 Survey_Data$DOB<- mdy(Survey_Data$DOB)
 
 #Neighbourhood Codes
-NBHDCodes<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/NBHDCodes2014.csv?token=AXfVpmFnuqmKA9gV-m2fESrAMIfphnBDks5YzttiwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+NBHDCodes<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/NBHDCodes2014.csv?token=AXfVpmFnuqmKA9gV-m2fESrAMIfphnBDks5YzttiwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 #Add Blairmore
 NBHDCodes$Neighbourhood<-as.character(NBHDCodes$Neighbourhood)
 NBHDCodes<- rbind (NBHDCodes, c (74,"Blairmore SC", 4))
@@ -124,7 +123,7 @@ NBHDCodes<- rbind (NBHDCodes, c (74,"Blairmore SC", 4))
 NBHDCodes$Era<-as.numeric(NBHDCodes$Era)
 
 #NALP
-NALP_Data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Fuller_NALP.csv?token=AXfVpjkDAoJXju58Y9UMvgHP5t-hHCM2ks5YztudwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+NALP_Data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Fuller_NALP.csv?token=AXfVpjkDAoJXju58Y9UMvgHP5t-hHCM2ks5YztudwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 #SELECTING THE COLUMNS YOU NEED
 NALP_Data<- sqldf ("SELECT Nghd_Name, NALP_AF, NALP_DD, NALP_SAFE, NALP_UA
               FROM NALP_Data")
@@ -146,7 +145,7 @@ NALP_Data$Nghd_Name [NALP_Data$Nghd_Name=="Adelaide/Churchill"]<- "Adelaide /Chu
 NALP_Data$Nghd_Name [NALP_Data$Nghd_Name=="Kelsey - Woodlawn"]<- "Kelsey Woodlawn"
 
 #2014 Weather Data
-SaskatoonWeather2014<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/2014SaskatoonWeather.csv?token=AXfVpqsPMJoR3nj3iA4DEf2OEV8go30Dks5YztYBwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE) 
+SaskatoonWeather2014<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/master/SaskatoonWeather_2014.csv?token=AXfVpsQRgM-KjoR0RyTXeYepvtg0zdaSks5Yz0LcwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8") 
 
 
 #Cleaning up SaskatoonWeather2014
@@ -161,7 +160,7 @@ SaskatoonWeather2014$Date<- mdy(SaskatoonWeather2014$Date)
 
 
 #2015 Weather Data
-SaskatoonWeather2015 <-read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/2015SaskatoonWeather.csv?token=AXfVpo7IOsXz91WV6WhA6LsmuH5Jn_J1ks5Yztb2wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+SaskatoonWeather2015 <-read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/master/SaskatoonWeather_2015.csv?token=AXfVpl2ki3QqHoikhhg3SuGsS1FZfuZYks5Yz0MEwA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 #Cleaning up SaskatoonWeather2015
 SaskatoonWeather2015<- SaskatoonWeather2015[c(1,6,20,22,26)]
 names (SaskatoonWeather2015) [1]<-"Date"
@@ -317,18 +316,18 @@ SaskatoonWeather2015$DayLight [SaskatoonWeather2015$Date=="2015-01-18"]<- "9.68"
 SaskatoonWeather2015$DayLight [SaskatoonWeather2015$Date=="2015-01-19"]<- "9.73"
 
 #TUHIN'S LIST
-TuhinList <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/ValidParticipants_Loose.csv?token=AXfVputlNuquQ10abG1aKLXsu0q5E6Juks5Yztv7wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+TuhinList <- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/ValidParticipants_Loose.csv?token=AXfVputlNuquQ10abG1aKLXsu0q5E6Juks5Yztv7wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 TuhinList$participant<- as.numeric(TuhinList$participant)
 TuhinList<- sqldf ("SELECT DISTINCT participant
                      FROM TuhinList")
 
 #TARUN'S DATAFILE
 
-Tarun_Data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_Tarun_Criteria3.csv?token=AXfVpi6OtBYk29P9jyUwfV-y0DjJzr_Nks5Yztw8wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Tarun_Data<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/Exported_Tarun_Criteria3.csv?token=AXfVpi6OtBYk29P9jyUwfV-y0DjJzr_Nks5Yztw8wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 
 
 #CODE BOOK
-Code<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/CodeBook_RoundA.csv?token=AXfVph4z4bdbmtaJg4LfXnQlYcMt0_Yaks5Yzti9wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE)
+Code<- read.csv(text=getURL("https://raw.githubusercontent.com/AhmadMobin/SaskKids_RoundA/645f5925243931f45b5c34a4e1b12f33d52e2883/CodeBook_RoundA.csv?token=AXfVph4z4bdbmtaJg4LfXnQlYcMt0_Yaks5Yzti9wA%3D%3D"),header = TRUE, stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 
 
 #SAMPLE COMPARISON:
@@ -871,8 +870,8 @@ shinyServer(function(input, output) {
            "Survey Data"= Survey_Data,
            "Neighbourhood Codes"= NBHDCodes,
            "NALP"= NALP_Data,
-           "2014 Weather"= SaskatoonWeather2014,
-           "2015 Weather"= SaskatoonWeather2015,
+           "Weather 2014"= SaskatoonWeather2014,
+           "Weather 2015"= SaskatoonWeather2015,
            "Tuhin's List"= TuhinList,
            "Tarun"= Tarun_Data,
            "Code Book"= Code)
